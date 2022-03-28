@@ -2,7 +2,7 @@
 
 int main()
 {
-    // test all the functions in CString.h
+    // // test all the functions in CString.h
     CString s1;
     CString s2("hello");
     CString s3(s2);
@@ -17,5 +17,13 @@ int main()
     cout << s2[0] << endl;
     cin >> s1;
     cout << s1 << endl;
+    // test operator!
+    CString s5("h e  ll o  ");
+    CString s6 = !s5;
+    cout << s6 << endl;
+    // test operator~
+    CString s7("hello");
+    s7.reverse();
+    cout << !s7 << endl;
     return 0;
 }
